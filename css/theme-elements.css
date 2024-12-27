@@ -2938,9 +2938,9 @@ html .scroll-to-top {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
-	background: #404040;
-	border-radius: 7px 7px 0 0;
-	bottom: 0px;
+	background: #546e7a;
+	border-radius: 50%;
+	bottom: 1rem;
 	color: #FFF;
 	display: block;
 	height: 9px;
@@ -2952,6 +2952,7 @@ html .scroll-to-top {
 	text-decoration: none;
 	min-width: 49px;
 	z-index: 1040;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 5);
 }
 
 html .scroll-to-top:hover {
