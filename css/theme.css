@@ -189,6 +189,11 @@ footer p{ color:#FFF}
 #header nav ul.nav-main li a.dropdown-toggle.extra {
 	display: none;
 }
+#header nav ul.nav-main li a.dropdown-toggle::after {
+	content: "\25BC";
+	float: right;
+	
+}
 
 #header nav ul.nav-main ul.dropdown-menu {
 	background-color: #CCC;
@@ -1105,7 +1110,21 @@ body #header nav.mega-menu .mega-menu-signin ul.dropdown-menu li a, body #header
 	padding: 0;
 	margin: 0;
 }
-
+@media(max-width:992px){
+	#header nav ul.nav-main li.dropdown:hover > ul {
+		display: none;
+	}
+	#header nav ul.nav-main li.dropdown.active > ul {
+		display: block;
+	}
+	#header nav ul.nav-main .dropdown-submenu:hover > .dropdown-menu {
+		display: none;
+	}
+	
+	#header nav ul.nav-main .dropdown-submenu.active > .dropdown-menu {
+		display: block;
+	}
+}
 /* Responsive */
 @media (max-width: 991px) {
 	#header.transparent{
@@ -1263,9 +1282,30 @@ body #header nav.mega-menu .mega-menu-signin ul.dropdown-menu li a, body #header
 		position: static;
 		clear: both;
 		float: none;
-		display: none !important;
+		display: none ;
 	}
+	#header nav ul.nav-main li.dropdown > ul {
+    display: none; /* Ensure dropdown is hidden by default */
+}
 
+#header nav ul.nav-main li.dropdown.active > ul {
+    display: block; /* Show dropdown only when active */
+}
+	
+	#header nav ul.nav-main li.dropdown > a {
+		cursor: pointer; /* Ensure the dropdown toggle looks clickable */
+	}
+	
+	@media (max-width: 768px) {
+		#header nav ul.nav-main li.dropdown > ul {
+			position: static;
+		}
+	}
+	
+	
+	/* #header .nav-main ul.dropdown-menu li.dropdown-submenu.active ul.dropdown-menu {
+display: block !important;
+	} */
 	#header .nav-main li.resp-active > ul.dropdown-menu {
 		display: block !important;
 	}
