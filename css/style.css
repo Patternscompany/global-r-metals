@@ -22,7 +22,7 @@ body {
 
 p {
     margin: 0 0 20px;
-    font-size: 18px;
+    /* font-size: 18px; */
     line-height: 28px;
     font-weight: 300;
 }
