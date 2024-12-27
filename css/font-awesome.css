@@ -610,6 +610,9 @@
 .fa-twitter:before {
 	content: "\f099";
 }
+.fa-x:before {
+	content: "\f00d"; /* Unicode for the X icon */
+  }
 .fa-facebook:before {
 	content: "\f09a";
 }

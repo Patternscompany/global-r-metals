@@ -48,6 +48,7 @@
 			<script src="vendor/respond/respond.js"></script>
 			<script src="vendor/excanvas/excanvas.js"></script>
 		<![endif]-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -479,7 +480,26 @@
 			</div>
 		</footer>
 	</div>
+	<style>
+		#header.fixed {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 1001;
+}
+</style>
+<script>
+const header = document.getElementById('header');
 
+window.onscroll = () => {
+if (window.scrollY > 200) {
+header.classList.add('fixed');
+} else {
+header.classList.remove('fixed');
+}
+};
+</script>
 	<!-- Vendor -->
 	<script src="vendor/jquery/jquery.js"></script>
 	<script src="vendor/jquery.appear/jquery.appear.js"></script>
