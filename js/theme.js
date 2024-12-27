@@ -220,7 +220,7 @@ window.theme = {};
 		accX: 0,
 		accY: -150,
 		delay: 1,
-		barColor: '#0088CC',
+		barColor: '#546e7a',
 		trackColor: '#f2f2f2',
 		scaleColor: false,
 		scaleLength: 5,
@@ -2311,20 +2311,7 @@ window.theme = {};
 
 		StickyMenu: {
 
-			defaults: {
-				wrapper: $('#header'),
-				stickyEnabled: true,
-				stickyEnableOnBoxed: true,
-				stickyEnableOnMobile: true,
-				stickyWithGap: true,
-				stickyChangeLogoSize: true,
-				stickyBodyPadding: true,
-				menuAfterHeader: false,
-				alwaysStickyEnabled: false,
-				logoPaddingTop: 28,
-				logoSmallWidth: 82,
-				logoSmallHeight: 40
-			},
+			
 
 			initialize: function($wrapper, opts) {
 				if (initialized) {
