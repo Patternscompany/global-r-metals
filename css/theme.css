@@ -28,7 +28,7 @@ footer p{ color:#FFF}
 	clear: both;
 	border-top: 5px solid #EDEDED;
 	min-height: 100px;
-	padding: 8px 0;
+	/* padding: 8px 0; */
 }
 
 #header > .container {
@@ -340,7 +340,7 @@ footer p{ color:#FFF}
 	-moz-transition: all 0.2s ease-in 0.2s;
 	transition: all 0.2s ease-in 0.2s;
 	margin: 0;
-	padding: 5px 0;
+	/* padding: 5px 0; */
 	display: table-cell;
 	vertical-align: middle;
 	height: 100%;
@@ -1209,7 +1209,7 @@ body #header nav.mega-menu .mega-menu-signin ul.dropdown-menu li a, body #header
 
 	#header .nav-main-collapse.collapse {
 		display: none !important;
-		z-index: 999;
+		z-index: 999 !important;
 	}
 .support{
 	display: none;
