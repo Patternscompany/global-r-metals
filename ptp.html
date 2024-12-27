@@ -265,6 +265,7 @@
 
 		</div>
 
+		
 		<footer id="footer">
 			<div class="container">
 				<div class="row">
@@ -376,7 +377,9 @@
 										9Y5. </p>
 								</li>
 								<li>
-									<p><i class="fa fa-phone"></i> <strong></strong></p>
+									<p><i class="fa fa-phone"></i> <strong>Phone:</strong>
+									<a href="tel:+917386937446">+917386937446</a>
+									</p>
 								</li>
 								<li>
 									<p><i class="fa fa-envelope"></i> <strong>Email:</strong> <a
@@ -386,11 +389,9 @@
 							</ul>
 							<div class="social-icons">
 								<ul class="social-icons">
-									<ul class="social-icons">
 									<li ><a href="index-1.html"> <i class="fab fa-facebook"></i> </a></li>
 									<li><a href="index-3.html" ><i class="fab fa-x-twitter"></i></a></li>
 									<li ><a href="hp.html" ><i class="fab fa-linkedin"></i></a></li>
-								</ul>
 								</ul>
 							</div>
 						</div>
@@ -413,7 +414,7 @@
 						<div class="col-md-4">
 							<nav id="sub-menu">
 								<ul>
-									<li><a href="sitemap.html">Sitemap</a></li>
+									
 									<li><a href="contact_us.html">Contact</a></li>
 								</ul>
 							</nav>
@@ -424,25 +425,28 @@
 		</footer>
 	</div>
 	<style>
-		#header.fixed {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-z-index: 1001;
+		.fa-x:before {
+  content: "\f00d"; /* Unicode for the X icon */
 }
-</style>
-<script>
-const header = document.getElementById('header');
-
-window.onscroll = () => {
-if (window.scrollY > 200) {
-header.classList.add('fixed');
-} else {
-header.classList.remove('fixed');
+					#header.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1001;
 }
-};
-</script>
+	</style>
+	<script>
+		const header = document.getElementById('header');
+	
+	window.onscroll = () => {
+	  if (window.scrollY > 200) {
+		header.classList.add('fixed');
+	  } else {
+		header.classList.remove('fixed');
+	  }
+	};
+	</script>
 	<!-- Vendor -->
 	<script src="vendor/jquery/jquery.js"></script>
 	<script src="vendor/jquery.appear/jquery.appear.js"></script>

@@ -33,7 +33,7 @@ footer p{ color:#FFF}
 
 #header > .container {
 	height: 100px;
-	margin-bottom: -35px;
+	/* margin-bottom: -35px; */
 	position: relative;
 	display: table;
 	max-width: 1170px;
@@ -136,7 +136,7 @@ footer p{ color:#FFF}
 }
 
 #header nav ul.nav-main {
-	margin: -7px 10px 8px 0;
+	/* margin: -7px 10px 8px 0; */
 }
 
 #header nav ul.nav-main > li + li {
@@ -413,7 +413,26 @@ body.sticky-menu-active.always-sticky #header {
 body.sticky-menu-active.always-sticky #header nav ul.nav-main {
 	margin: -7px 10px 8px 0;
 }
-
+#header .row{
+	display: flex !important;
+	justify-content: space-between;
+	align-items: center;
+}
+@media  (max-width:992px){
+	#header .row{
+		display: unset !important;
+		
+	}
+	#header .row .navbar-collapse{
+position: absolute;
+top: 100%;
+left:0;
+width: 100%;
+	}
+	#header nav{
+		float: unset;
+	}
+}
 body.sticky-menu-active.always-sticky #header .social-icons {
 	margin-top: -3px;
 }
@@ -541,8 +560,8 @@ body.scrolling .nav-main-collapse.collapsing {
 /* Header Flat Menu */
 @media (min-width: 992px) {
 	#header.flat-menu > .container {
-		height: 91px;
-		margin-bottom: -82px;
+		/* height: 91px; */
+		/* margin-bottom: -82px; */
 	}
 
 	#header.flat-menu .header-top {
@@ -569,7 +588,7 @@ body.scrolling .nav-main-collapse.collapsing {
 
 	#header.flat-menu nav ul.nav-main {
 		float: right;
-		margin: -9px 0 -8px;
+		/* margin: -9px 0 -8px; */
 	}
 
 	#header.flat-menu nav ul.nav-main > li > a {
@@ -671,7 +690,7 @@ body.scrolling .nav-main-collapse.collapsing {
 	}
 
 	#header.single-menu nav ul.nav-main {
-		margin: -28px 0 -9px;
+		/* margin: -28px 0 -9px; */
 		float: right;
 	}
 
@@ -689,8 +708,8 @@ body.scrolling .nav-main-collapse.collapsing {
 	}
 
 	#header.single-menu.valign nav ul.nav-main > li > a, #header.single-menu.valign nav ul.nav-main > li.dropdown:hover > a {
-		padding-bottom: 42px;
-		padding-top: 47px;
+		padding-bottom: 10px;
+		padding-top: 10px;
 	}
 
 	/* Header Single Menu - Sticky Menu / Boxed */
@@ -1089,6 +1108,9 @@ body #header nav.mega-menu .mega-menu-signin ul.dropdown-menu li a, body #header
 
 /* Responsive */
 @media (max-width: 991px) {
+	#header.transparent{
+		position: unset;
+	}
 	#header nav.mega-menu ul.nav-main .mega-menu-signin {
 		margin-right: 0;
 	}
@@ -1187,8 +1209,11 @@ body #header nav.mega-menu .mega-menu-signin ul.dropdown-menu li a, body #header
 
 	#header .nav-main-collapse.collapse {
 		display: none !important;
+		z-index: 999;
 	}
-
+.support{
+	display: none;
+}
 	#header .nav-main-collapse.in {
 		width: 100%;
 		overflow: hidden;
