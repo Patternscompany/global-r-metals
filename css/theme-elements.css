@@ -2958,6 +2958,7 @@ html .scroll-to-top {
 html .scroll-to-top:hover {
 	filter: alpha(opacity=100);
 	opacity: 1;
+	color: white;
 }
 
 html .scroll-to-top.visible {
