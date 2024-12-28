@@ -386,7 +386,7 @@ footer p{ color:#FFF}
 	/* object-fit: scale-down;
 	width: 200px !important; */
 	height: 100%;
-	width: 120px;
+	width: 100px;
 
 }
 
@@ -1453,7 +1453,7 @@ display: block !important;
 
 	/* Logo */
 	#header .logo img {
-		width: 100px;
+		width: 80px;
 		max-height: none !important;
 		height: auto !important;
 	}
