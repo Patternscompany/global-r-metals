@@ -906,7 +906,7 @@ window.theme = {};
 		keyboardNavigation: 'on',
 
 		navigationHAlign: 'center',
-		navigationVAlign: 'left',
+		navigationVAlign: 'center',
 		navigationHOffset: 0,
 		navigationVOffset: 20,
 
