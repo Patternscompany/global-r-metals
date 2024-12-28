@@ -879,8 +879,12 @@ window.theme = {};
 	PluginRevolutionSlider.defaults = {
 		dottedOverlay: 'none',
 		delay: 9000,
-		startwidth: 1170,
-		startheight: 500,
+		fullWidth: 'on',
+		fullScreen: 'on',
+		forceFullWidth: 'on', // Force the slider to full width
+		autoHeight: 'off', // Prevents the slider from adjusting height
+		startwidth: "100%",
+		startheight: "100%",
 		hideThumbs: 200,
 
 		thumbWidth: 100,
@@ -902,7 +906,7 @@ window.theme = {};
 		keyboardNavigation: 'on',
 
 		navigationHAlign: 'center',
-		navigationVAlign: 'bottom',
+		navigationVAlign: 'left',
 		navigationHOffset: 0,
 		navigationVOffset: 20,
 
@@ -918,7 +922,7 @@ window.theme = {};
 
 		shadow: 0,
 		fullWidth: 'on',
-		fullScreen: 'off',
+		fullScreen: 'on',
 
 		spinner: 'spinner0',
 
