@@ -1120,6 +1120,10 @@ body.sticky-menu-active #header.transparent.semi-transparent.font-color-light na
 	padding-top: 7px;
 }
 
+.head.container .row:before, .head.container .row:after{
+		
+	content: unset !important;
+}
 #header nav.mega-menu ul.nav-main .mega-menu-signin.logged .user-avatar span {
 	color: #666;
 	display: block;
