@@ -1,0 +1,63 @@
+{
+    "rewrites": [
+      {
+        "source": "/:path*", 
+        "destination": "/:path*.html",
+        "has": [
+          { "type": "filesystem", "value": "/:path*.html" }
+        ]
+      },
+      {
+        "source": "/:path*", 
+        "destination": "/:path*.shtml",
+        "has": [
+          { "type": "filesystem", "value": "/:path*.shtml" }
+        ]
+      }
+    ],
+    "redirects": [
+      {
+        "source": "http://www.globalrmetals.com/:path*", 
+        "destination": "https://globalrmetals.com/:path*", 
+        "permanent": true
+      }
+    ],
+    "headers": [
+      {
+        "source": "/:path*",
+        "headers": [
+          {
+            "key": "Strict-Transport-Security",
+            "value": "max-age=31536000; includeSubDomains"
+          },
+          {
+            "key": "Accept-Ranges",
+            "value": "bytes"
+          }
+        ]
+      },
+      {
+        "source": "/:path*",
+        "has": [
+          { "type": "extension", "value": "mp4" }
+        ],
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "video/mp4"
+          },
+          {
+            "key": "Cache-Control",
+            "value": "no-store, no-cache, must-revalidate, max-age=0"
+          },
+          {
+            "key": "Pragma",
+            "value": "no-cache"
+          }
+        ]
+      }
+    ],
+    "errorPage": "/404.html",
+    "compression": false
+  }
+  
