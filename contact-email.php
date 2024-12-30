@@ -12,6 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phone = $_POST['phone'];
     $message = $_POST['message'];
 
+ 
 
     // Create a new PHPMailer instance
     $mail = new PHPMailer(true);
@@ -26,8 +27,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Password = 'sycmzgfyllrlmvqy'; 
         $mail->Port = 587;
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption
-        $mail->SMTPDebug = 2; // Enables verbose debugging output
-        $mail->Debugoutput = 'html'; // Output in browser-friendly format
+        // $mail->SMTPDebug = 2; // Enables verbose debugging output
+        // $mail->Debugoutput = 'html'; // Output in browser-friendly format
         
         // Email settings
         $mail->setFrom('admin@globalrmetals.com', 'Global Contact Form'); // Replace with your email and name
@@ -35,11 +36,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $mail->Subject = "Message from $name";
         $mail->isHTML(true);
-        $mailContent = "<p><strong>Name:</strong> $name</p>
-                        <p><strong>Email:</strong> $email</p>
-                        <p><strong>Phone:</strong> $phone</p>
-                      
-                        <p><strong>Message:</strong> $message</p>";
+        $mailContent = "
+    <div style='font-family: Arial, sans-serif; color: #333; line-height: 1.6;'>
+        <h2 style='color: #2c3e50; text-align: center;'>New Contact Form Submission - Global R Metals</h2>
+        <hr style='border: none; border-top: 1px solid #ccc; margin: 20px 0;'>
+        <p><strong style='color: #2980b9;'>Name:</strong> $name</p>
+        <p><strong style='color: #2980b9;'>Email:</strong> $email</p>
+        <p><strong style='color: #2980b9;'>Phone:</strong> $phone</p>
+        <p><strong style='color: #2980b9;'>Message:</strong><br>$message</p>
+        <hr style='border: none; border-top: 1px solid #ccc; margin: 20px 0;'>
+        <p style='font-size: 0.9em; text-align: center;'>This message was sent from the Global R Metals website contact form.</p>
+    </div>
+";
+
         $mail->Body = $mailContent;
 
         // Send the email
