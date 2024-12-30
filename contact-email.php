@@ -1,9 +1,27 @@
 <?php
+require_once __DIR__ . '/vendor/autoload.php';
+// Ensure the correct path to autoload.php
+
+
+// Import the Dotenv class
+use Dotenv\Dotenv;
+// Test if Dotenv class is autoloaded
+if (class_exists('Dotenv\Dotenv')) {
+    echo "Dotenv class is loaded!";
+} else {
+    echo "Dotenv class is NOT loaded!";
+}
+
+// Load environment variables from .env file
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+
 // Include PHPMailer library
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require './vendor/autoload.php';
+
 
 // Handle form submission
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -20,11 +38,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         // SMTP configuration
         $mail->isSMTP();
-        $mail->Host = 'smtp.office365.com'; // Replace with your SMTP server address
+        $mail->Host = $_ENV['SMTP_HOST']; // Replace with your SMTP server address
         $mail->SMTPAuth = true;
-        $mail->Username = 'admin@globalrmetals.com'; // Replace with your SMTP username
+        $mail->Username = $_ENV['SMTP_USERNAME']; // Replace with your SMTP username
         // $mail->Password = 'Global@123'; 
-        $mail->Password = 'sycmzgfyllrlmvqy'; 
+        $mail->Password = $_ENV['SMTP_PASSWORD']; 
         $mail->Port = 587;
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption
         // $mail->SMTPDebug = 2; // Enables verbose debugging output
