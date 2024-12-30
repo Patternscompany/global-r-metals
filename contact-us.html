@@ -184,46 +184,63 @@
 
 						<h4>Online <strong>Enquiry</strong></h4>
 
-						<form id="contactForm" action="contact-email.php" method="POST">
-							<div class="row">
-								<div class="form-group">
-									<div class="col-md-6"><label>Your name *</label> <input class="form-control"
-											data-msg-required="Please enter your name." id="name" maxlength="100"
-											name="name" required="" type="text" value=""></div>
+					
 
-									<div class="col-md-6"><label>Your email address *</label> <input
-											class="form-control" data-msg-email="Please enter a valid email address."
-											data-msg-required="Please enter your email address." id="email"
-											maxlength="100" name="email" required="" type="email" value=""></div>
-								</div>
+						<form method="post" action="//submit.form" onSubmit="return validateForm();">
+							<div >
 							</div>
-
-							<div class="row">
-								<div class="form-group">
-									<div class="col-md-12"><label>Phone</label> <input class="form-control"
-											data-msg-required="Please enter Phone no." id="phone" maxlength="100"
-											name="phone" pattern="^\d{10}$" title="Please enter exactly 10 digits." required="" type="tel" value="">
-
-										</div>
-								</div>
+							<div style="display: flex; padding-bottom: 18px;">
+							<div style=" margin-left: 0; margin-right: 1%; width: 49%;">Name<span style="color: red;"> *</span><br/>
+							<input type="text" id="data_2" name="data_2" style="max-width: 100%;" class="form-control"/>
 							</div>
-
-							<div class="row">
-								<div class="form-group">
-									<div class="col-md-12"><label>Message *</label><textarea class="form-control"
-											data-msg-required="Please enter your message." id="message" maxlength="5000"
-											name="message" required="" rows="3"></textarea></div>
-								</div>
+							<div style=" margin-left: 1%; margin-right: 0; width: 49%;">Email<span style="color: red;"> *</span><br/>
+							<input type="text" id="data_3" name="data_3" style="max-width: 100%;" class="form-control"/>
 							</div>
-
+							</div><div style="padding-bottom: 18px;">Number<span style="color: red;"> *</span><br/>
+							<input type="number" id="data_4" name="data_4" style="" class="form-control"/>
+							</div>
+							<div style="padding-bottom: 18px;">Message<br/>
+							<textarea id="data_5" false name="data_5" style="" rows="3" class="form-control"></textarea>
+							</div>
+							<div style="padding-bottom: 18px;"><input class="btn btn-primary btn-lg" name="skip_Submit" value="Submit" type="submit"/></div>
+							<div>
+							<div style="float:right"><a href="https://www.100forms.com" id="lnk100" title="form to email">form to email</a></div>
+							<script src="https://www.100forms.com/js/FORMKEY:QT73D6W8732W" type="text/javascript"></script>
+							</div>
+							</form>
 							
+							<script type="text/javascript">
+							function validateForm() {
+							if (isEmpty(document.getElementById('data_2').value.trim())) {
+							alert('Name is required!');
+							return false;
+							}
+							if (isEmpty(document.getElementById('data_3').value.trim())) {
+							alert('Email is required!');
+							return false;
+							}
+							if (isEmpty(document.getElementById('data_4').value.trim())) {
+                                                                            alert('Phone Number is required!');
+                                                                            return false;
+                                                                            }
+                                                                            
+                                                                            var phoneNumber = document.getElementById('data_4').value.trim();
+                                                                            
+                                                                            // Check if the input is exactly 10 digits
+                                                                            if (!/^\d{10}$/.test(phoneNumber)) {
+                                                                            alert('Please enter a valid 10-digit phone number!');
+                                                                            return false;
+                                                                            }
+                                        return true;
+                                        }
+						
+							function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+							function validateEmail(email) {
+							var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+							return isEmpty(email) || re.test(email);
+							}
+							</script>
 
-
-							<div class="row">
-								<div class="col-md-12"> <input type="submit" value="Submit"
-										class="btn btn-primary btn-lg" id="submit" name="submit"></div>
-							</div>
-						</form>
 					</div>
 
 					<div class="col-md-6">
@@ -258,7 +275,11 @@
 				</div>
 			</div>
 		</div>
-	
+	<style>
+		#lnk100{
+			display: none;
+		}
+	</style>
 		<div class="map">
 			<object 
     data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317716.60648832744!2d-0.43124740725554217!3d51.5286070079531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sin!4v1735533996112!5m2!1sen!2sin" 
