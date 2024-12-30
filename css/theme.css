@@ -1457,7 +1457,7 @@ display: block !important;
 	/* Responsive Button Nav */
 	.btn-responsive-nav {
 		background: #171717;
-		top: 35px;
+		top: 25px;
 		display: block;
 		position: absolute;
 		right: 20px;
@@ -1510,7 +1510,7 @@ display: block !important;
 
 	/* Responsive Button Nav */
 	.btn-responsive-nav {
-		top: 35px;
+		top: 25px;
 	}
 
 	body.sticky-menu-active .btn-responsive-nav {
