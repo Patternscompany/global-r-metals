@@ -1572,7 +1572,7 @@ display: block !important;
 
 /* Page Top Custom - Create your Own */
 .page-top.custom-product {
-	background-image: url(../custom-header-bg.html);
+	background-image: url(../custom-header-bg);
 	background-repeat: repeat;
 	background-color: #999;
 	border-top: 5px solid #888;
@@ -1672,7 +1672,7 @@ section.featured.footer {
 }
 
 section.featured.map {
-	background-image: url(../map-bottom.html);
+	background-image: url(../map-bottom);
 	background-position: center 0;
 	background-repeat: no-repeat;
 	margin-top: 0;
@@ -1933,7 +1933,7 @@ aside ul.nav-list > li > a {
 
 /* Map */
 .map-section {
-	background: transparent url(../map-top.html) center 0 no-repeat;
+	background: transparent url(../map-top) center 0 no-repeat;
 	padding-top: 220px;
 	margin-top: 40px;
 }
@@ -2037,7 +2037,7 @@ aside ul.nav-list > li > a {
 }
 /* Home Concept */
 .home-concept {
-	background: transparent url(../home-concept.html) no-repeat center 0;
+	background: transparent url(../home-concept) no-repeat center 0;
 	width: 100%;
 	overflow: hidden;
 }
@@ -2056,7 +2056,7 @@ aside ul.nav-list > li > a {
 }
 
 .home-concept .process-image {
-	background: transparent url(../home-concept-item.html) no-repeat 0 0;
+	background: transparent url(../home-concept-item) no-repeat 0 0;
 	width: 160px;
 	height: 175px;
 	margin: 135px auto 0 auto;
@@ -2076,7 +2076,7 @@ aside ul.nav-list > li > a {
 }
 
 .home-concept .project-image {
-	background: transparent url(../home-concept-item.html) no-repeat 100% 0;
+	background: transparent url(../home-concept-item) no-repeat 100% 0;
 	width: 350px;
 	height: 420px;
 	margin: 15px 0 0 -30px;
@@ -2086,7 +2086,7 @@ aside ul.nav-list > li > a {
 }
 
 .home-concept .sun {
-	background: transparent url(../home-concept-icons.html) no-repeat 0 0;
+	background: transparent url(../home-concept-icons) no-repeat 0 0;
 	width: 60px;
 	height: 56px;
 	display: block;
@@ -2096,7 +2096,7 @@ aside ul.nav-list > li > a {
 }
 
 .home-concept .cloud {
-	background: transparent url(../home-concept-icons.html) no-repeat 100% 0;
+	background: transparent url(../home-concept-icons) no-repeat 100% 0;
 	width: 116px;
 	height: 56px;
 	display: block;
@@ -2605,7 +2605,7 @@ html.dark section.featured {
 }
 
 html.dark section.featured.map {
-	background-image: url(../map-bottom-dark.html);
+	background-image: url(../map-bottom-dark);
 }
 
 html.dark section.call-to-action:before {
@@ -2684,27 +2684,27 @@ html.dark .theme-default .nivoSlider {
 }
 
 html.dark .map-section {
-	background-image: url(../map-top-dark.html);
+	background-image: url(../map-top-dark);
 }
 
 html.dark .home-concept {
-	background-image: url(../home-concept-dark.html);
+	background-image: url(../home-concept-dark);
 }
 
 html.dark .home-concept .process-image {
-	background-image: url(../home-concept-item-dark.html);
+	background-image: url(../home-concept-item-dark);
 }
 
 html.dark .home-concept .project-image {
-	background-image: url(../home-concept-item-dark.html);
+	background-image: url(../home-concept-item-dark);
 }
 
 html.dark .home-concept .sun {
-	background-image: url(../home-concept-icons-dark.html);
+	background-image: url(../home-concept-icons-dark);
 }
 
 html.dark .home-concept .cloud {
-	background-image: url(../home-concept-icons-dark.html);
+	background-image: url(../home-concept-icons-dark);
 }
 
 html.dark .page-top {
@@ -2752,7 +2752,7 @@ html.dark .progress {
 }
 
 html.dark .arrow {
-	background-image: url(../arrows-dark.html);
+	background-image: url(../arrows-dark);
 }
 
 html.dark .thumbnail,
@@ -2870,7 +2870,7 @@ html.dark hr.light {
 }
 
 html.dark ul.history li .thumb {
-	background-image: url(../history-thumb-dark.html);
+	background-image: url(../history-thumb-dark);
 }
 
 html.dark .blog-posts article {

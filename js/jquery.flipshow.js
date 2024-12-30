@@ -295,8 +295,8 @@
 
 			this.$flipBack.css( 'transform', transformProperties );
 
-			this.$frontContent.empty().html( $currentItem.html() );
-			this.$backContent.empty().html( $nextItem.html() );
+			this.$frontContent.empty()( $currentItem() );
+			this.$backContent.empty()( $nextItem() );
 			this.$flipEl.show();
 
 			var self = this;

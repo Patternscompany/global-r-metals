@@ -1073,7 +1073,7 @@ section.video .container {
 }
 
 section.video .video-overlay {
-	background: transparent url(../video-overlay.html) repeat 0 0;
+	background: transparent url(../video-overlay) repeat 0 0;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -2449,11 +2449,11 @@ ul.social-icons li.googleplus:hover {
 	background-position: 0 -330px;
 }
 
-ul.social-icons li.html5 {
+ul.social-icons li5 {
 	background-position: 0 -360px;
 }
 
-ul.social-icons li.html5:hover {
+ul.social-icons li5:hover {
 	background-position: 0 -390px;
 }
 
@@ -2659,7 +2659,7 @@ ul.social-icons li.vk:hover {
 
 /* Arrows */
 .arrow {
-	background: transparent url(../arrows.html) no-repeat 0 0;
+	background: transparent url(../arrows) no-repeat 0 0;
 	width: 47px;
 	height: 120px;
 	display: inline-block;
@@ -3150,7 +3150,7 @@ ul.history li p {
 }
 
 ul.history li .thumb {
-	background: transparent url(../history-thumb.html) no-repeat 0 0;
+	background: transparent url(../history-thumb) no-repeat 0 0;
 	width: 227px;
 	height: 160px;
 	margin: 0 0 30px;

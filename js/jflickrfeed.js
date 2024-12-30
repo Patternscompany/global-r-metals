@@ -53,7 +53,7 @@
 						}
 						
 						// Add Image Sizes
-						// http://www.flickr.com/services/api/misc.urls.html
+						// http://www.flickr.com/services/api/misc.urls
 						item['image_s'] = item.media.m.replace('_m', '_s');
 						item['image_t'] = item.media.m.replace('_m', '_t');
 						item['image_m'] = item.media.m.replace('_m', '_m');

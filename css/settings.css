@@ -1419,7 +1419,7 @@ website:	 	http://www.themepunch.com
 	left: 0px
 }
 
-.html5vid.videoisplaying .tp-poster {
+5vid.videoisplaying .tp-poster {
 	display: none
 }
 
@@ -1442,7 +1442,7 @@ website:	 	http://www.themepunch.com
 	cursor: pointer;
 }
 
-.html5vid .tp-revstop {
+5vid .tp-revstop {
 	width: 15px;
 	height: 20px;
 	border-left: 5px solid #fff;
@@ -1454,23 +1454,23 @@ website:	 	http://www.themepunch.com
 	-webkit-box-sizing: border-box
 }
 
-.html5vid .tp-revstop {
+5vid .tp-revstop {
 	display: none
 }
 
-.html5vid.videoisplaying .revicon-right-dir {
+5vid.videoisplaying .revicon-right-dir {
 	display: none
 }
 
-.html5vid.videoisplaying .tp-revstop {
+5vid.videoisplaying .tp-revstop {
 	display: block
 }
 
-.html5vid.videoisplaying .tp-video-play-button {
+5vid.videoisplaying .tp-video-play-button {
 	display: none
 }
 
-.html5vid:hover .tp-video-play-button {
+5vid:hover .tp-video-play-button {
 	display: block
 }
 

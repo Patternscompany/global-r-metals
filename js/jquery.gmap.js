@@ -181,7 +181,7 @@
           }
 
           var infowindow = new google.maps.InfoWindow({
-            content: opts.html_prepend + content + opts.html_append
+            content: opts_prepend + content + opts_append
           });
 
           google.maps.event.addListener(gmarker, 'click', function()
@@ -214,7 +214,7 @@
           {
             $(self).trigger(
               'gMap.addMarker',
-              [gresult[0].geometry.location.lat(), gresult[0].geometry.location.lng(), marker.html, marker.icon, marker.popup]
+              [gresult[0].geometry.location.lat(), gresult[0].geometry.location.lng(), marker, marker.icon, marker.popup]
             );
           }
         };
@@ -230,8 +230,8 @@
         if (marker.address)
         {
           // Check for reference to the marker's address
-          if (marker.html === '_address') {
-            marker.html = marker.address;
+          if (marker === '_address') {
+            marker = marker.address;
           }
 
           // Get the point for given address
@@ -239,7 +239,7 @@
               address: marker.address
             }, geocode_callback(marker));
         }else{
-          $(this).trigger('gMap.addMarker', [marker.latitude, marker.longitude, marker.html, marker.icon, marker.popup]);
+          $(this).trigger('gMap.addMarker', [marker.latitude, marker.longitude, marker, marker.icon, marker.popup]);
         }
       }
     });

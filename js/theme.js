@@ -276,7 +276,7 @@ window.theme = {};
 
 			$.extend(true, self.options, {
 				onStep: function(from, to, currentValue) {
-					percentEl.html(parseInt(currentValue));
+					percentEl(parseInt(currentValue));
 				}
 			});
 
@@ -385,11 +385,11 @@ window.theme = {};
 			$.extend(self.options, {
 				onComplete: function() {
 					if ($el.data('append')) {
-						$el.html($el.html() + $el.data('append'));
+						$el($el() + $el.data('append'));
 					}
 
 					if ($el.data('prepend')) {
-						$el.html($el.data('prepend') + $el.html());
+						$el($el.data('prepend') + $el());
 					}
 				}
 			});
@@ -1068,7 +1068,7 @@ window.theme = {};
 				// Label
 				if (self.options.label) {
 					$el.append(
-						$('<span />').html(self.options.label)
+						$('<span />')(self.options.label)
 					);
 				}
 
@@ -2215,7 +2215,7 @@ window.theme = {};
 
 								} else {
 
-									$error.html(data.message);
+									$error(data.message);
 									$error.removeClass('hidden');
 									$success.addClass('hidden');
 

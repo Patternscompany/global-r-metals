@@ -45,7 +45,7 @@ if (typeof Object.create !== "function") {
                             content += data.owl[i].item;
                         }
                     }
-                    base.$elem.html(content);
+                    base.$elem(content);
                 }
                 base.logIn();
             }
@@ -462,7 +462,7 @@ if (typeof Object.create !== "function") {
                 return false;
             }
 
-            base.paginationWrapper.html("");
+            base.paginationWrapper("");
 
             counter = 0;
             lastPage = base.itemsAmount - base.itemsAmount % base.options.items;
