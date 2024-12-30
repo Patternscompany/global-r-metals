@@ -10,8 +10,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
     $email = $_POST['email'];
     $phone = $_POST['phone'];
-    // $service = $_POST['service'];
     $message = $_POST['message'];
+
 
     // Create a new PHPMailer instance
     $mail = new PHPMailer(true);
